@@ -1,0 +1,40 @@
+* {
+    background-color: #121212;
+}
+
+label {
+    color: #808080;
+    font-size: small;
+}
+
+h2 {
+    color: #dfdfdf;
+    text-align: center;
+}
+
+h5 {
+    color: #dfdfdf;
+    text-align: center;
+}
+
+.row {
+    padding-bottom: 10px;
+}
+
+/* Navigation Links */
+.nav-link {
+    color: #ffffff9d !important;
+}
+
+.nav-link:hover {
+    color: #ffffff !important;
+}
+
+.nav-link:focus {
+    color: #ffffff !important;
+}
+
+/* Select A cAR lbel */
+p {
+    color: #dfdfdf;
+}
