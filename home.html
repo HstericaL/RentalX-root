@@ -17,18 +17,26 @@
         <!-- Header -->
         <nav class="navbar" style="background-color: #121212;" id="header">
             <div class="container-xl">
-                <a class="navbar-brand" style="color: #ffffff;" href="#">RentalX</a>
+                <a class="navbar-brand" style="color: #ffffff;" href="home.html">
+                  <img src="/assets/logo.png" alt="RentalX" style="width: 100px;">
+                </a>
                 <!-- Links -->
                     <nav class="nav justify-content-center">
                         <a class="nav-link px-2 text-muted" href="#">Home</a>
-                        <a class="nav-link px-2 text-muted" href="#">About us</a>
-                        <a class="nav-link px-2 text-muted" href="#">Contact</a>
-                        <a class="nav-link px-2 text-muted" href="#">Gallery</a>
+                        <a class="nav-link px-2 text-muted" href="about.html">About us</a>
+                        <a class="nav-link px-2 text-muted" href="contact.html">Contact</a>
+                        <a class="nav-link px-2 text-muted" href="gallery.html">Gallery</a>
                     </nav>
                     <!-- Login Button -->
                     <button type="button" class="btn" style="background-color: #F16E1F; color: #ffffff; padding: 5px 30px 5px 30px;">Log in</button>
             </div>
         </nav>
+
+        <div class="container-fluid" style="height: 230px; background-color: #101010; text-align: center;">
+          <h2 style="padding-top: 50px; color: #ffff; background-color: #101010;">Welcome to RentalX Car Reservation</h2>
+          <p style="margin: 10px 150px 10px 150px; color: rgba(255, 255, 255, 0.5); background-color: #101010;">Welsome to RentalX Car Reservation Website. We offer one stop travel solutions to corporates, tourists and individuals. We are established in 2023 with a dream to fullfill people's transportation needs.</p>
+          <button type="button" class="btn" style="background-color: #F16E1F; color: #ffffff; padding: 10px 30px 10px 30px; margin-top: 10px;">Book Now</button>
+        </div>
 
         <!-- Carousel -->
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -70,33 +78,33 @@
 
         <!-- Body -->
         <div class="parent-container" style="padding-top: 50px;">
-        <div class="container" style="background-color: #121212; padding: 10px 100px 10px 100px;">
+        <div class="container-fluid" style="background-color: #121212; padding: 10px 100px 10px 100px;">
             <h2>BOOKING INFORMATION</h2>
             <p style="color: #909090; text-align: center;">Fill out the form below and we'll get back to you in no time.</p>
             <!-- User Input -->
             <div class="row">
                 <!-- Top Input -->
                 <div class="col">
-                     <label for="pickupLocation">Name</label>
-                     <input type="text" class="form-control" placeholder="Enter name" id="pickupLocation">
+                     <label for="name">Name *</label>
+                     <input type="text" class="form-control" placeholder="Enter name" id="name">
                 </div>
                 <div class="col">
-                     <label for="dropoffLocation">Contact Number</label>
-                    <input type="text" class="form-control" placeholder="Enter contact number" id="dropoffLocation">
+                     <label for="contactn">Contact Number *</label>
+                    <input type="text" class="form-control" placeholder="Enter contact number" id="contact">
                 </div>
                 <div class="col">
-                    <label for="dropoffLocation">E-mail</label>
-                   <input type="text" class="form-control" placeholder="Enter email" id="dropoffLocation">
+                    <label for="email">E-mail *</label>
+                   <input type="text" class="form-control" placeholder="Enter email" id="email">
                </div>
             </div>
         <div class="row">
             <!-- Top Input -->
             <div class="col">
-                 <label for="pickupLocation">Pickup Location</label>
+                 <label for="pickupLocation">Pickup Location *</label>
                  <input type="text" class="form-control" placeholder="Enter a location" id="pickupLocation">
             </div>
             <div class="col">
-                 <label for="dropoffLocation">Dropoff Location</label>
+                 <label for="dropoffLocation">Dropoff Location *</label>
                 <input type="text" class="form-control" placeholder="Enter a location" id="dropoffLocation">
             </div>
         </div>
@@ -104,24 +112,24 @@
             <div class="row">
                 <!-- Top Input -->
                 <div class="col" style="padding-bottom: 20px;">
-                    <label for="pickupDate">Pickup Date</label>
+                    <label for="pickupDate">Pickup Date *</label>
                     <input type="date" class="form-control" id="pickupDate">
                 </div>
                 <div class="col">
-                    <label for="dropoffDate">Pickup Date</label>
+                    <label for="dropoffDate">Pickup Date *</label>
                     <input type="date" class="form-control" id="dropoffDate">
                 </div>
                 <div class="col">
-                    <label for="pickupTime">Pickup Date</label>
+                    <label for="pickupTime">Pickup Date *</label>
                     <input type="time" class="form-control" id="pickupTime">
                 </div>
                 <div class="col">
-                    <label for="dropoffTime">Pickup Date</label>
+                    <label for="dropoffTime">Pickup Date *</label>
                     <input type="time" class="form-control" id="dropoffTime">
                 </div>
             </div>
             <!-- Select A Car -->
-            <h5>Select A Car:</h5>
+            <h5>Select A Car: *</h5>
             <div class="form-check">
                 <div class="row">
                     <div class="col">
@@ -147,11 +155,11 @@
                 </div>
             </div>
             <!-- Checkbox Label -->
-            <div class="form-check">
+            <div class="d-flex justify-content-center">
                 <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                <label class="form-check-label" for="defaultCheck1">
-                  By clicking the confirm button below, I hereby agree to and accept the following <a href="https://www.nrgroup-global.com/en/terms-conditions.php" target="_blank">terms and conditions.</a>
-                </label>
+                <p class="form-check-label" for="defaultCheck1" style="color: #909090;">
+                  &nbsp By clicking the confirm button below, I hereby agree to and accept the following <a href="https://car-rental.ph/terms-and-conditions/" target="_blank">terms and conditions.</a>
+                </p>
               </div>
 
             <!-- Confirm Booking Button -->
@@ -168,8 +176,8 @@
         <!-- Navigation Bottom -->
         <!-- FOOTER -->
         <div>
-        <div class="container">
-            <footer class="d-flex flex-wrap justify-content-between align-items-center" style="padding: 50px;">
+          <div class="container-fluid" style="background-color: #121212;">
+            <footer class="d-flex flex-wrap justify-content-between align-items-center" style="padding: 10px;">
               <p class="col-md-4 mb-0 text-muted">© 2022 RentalX, Inc</p>
           
               <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
@@ -178,9 +186,9 @@
           
               <ul class="nav col-md-4 justify-content-end">
                 <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About us</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Contact</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Gallery</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link px-2 text-muted">About us</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link px-2 text-muted">Contact</a></li>
+                <li class="nav-item"><a href="gallery.html" class="nav-link px-2 text-muted">Gallery</a></li>
               </ul>
             </footer>
           </div>
